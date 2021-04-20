@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>ThingSwap</title>
+ <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+<body class="container">
+  <h1>A (very) Minimal EVM Contract Demo:</h1>
+  <h1>Own Thing by ID "On the Blockchain"</h1>
+
+  <hr />
+  <h2 class="hidden" id="ownageBlurb">Owner of ID=<span id="resultThingID"></span> is Address=<span id="resultAddress"></span></h2>
+  
+ <input type="text" id="thingID" /><br />
+ <a href="#" onclick="getThingOwner()" class="btn btn-primary">Display This Thing's Owner</a><br />
+ <a href="#" onclick="recordBirth()" class="btn btn-primary">Record This Thing as New (only contract owner can do this)</a><br />
+ <a href="#" onclick="transferThing()" class="btn btn-primary">Transfer Thing Onwnership to:</a><input type="text" id="newOwnerAddress" /><br />
+ <button id="enableEthereumButton">Enable Ethereum</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="./index.js"></script>
+</html>
